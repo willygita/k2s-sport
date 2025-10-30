@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCS Sports Platform</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span style="font-size: 24px; font-weight: 900; color: #00FFCC;"><img
+                    src="../images/WhatsApp_Image_2025-10-25_at_16.24.26_92ac47b1-removebg-preview.png"
+                    height="100px"></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="scouting.html">SCOUTING PROGRAM</a>
+            <a href="marketplace.html">STORE</a>
+            <a href="dashboard.html" class="active">DASHBOARD</a>
+            <a href="#">CONTACT US</a>
+            <div class="mobile-cta-buttons">
+                <a href="login.html" class="login-btn">LOGIN</a>
+                <a href="signup.html" class="signup-btn">SIGN UP</a>
+                <a href="dashboard.html" class="signup-btn">USER DASHBOARD</a>
+                <a href="admin.html" class="signup-btn">ADMIN DASHBOARD </a>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">LOGIN</a>
+            <a href="signup.html" class="signup-btn">SIGN UP</a>
+            <a href="dashboard.html" class="signup-btn">USER DASHBOARD</a>
+            <a href="admin.html" class="signup-btn">ADMIN DASHBOARD</a>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        </div>
+        <div class="nav-buttons">
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg-slider" id="heroBgSlider">
+            <div class="slide slide-1"></div>
+            <div class="slide slide-2"></div>
+            <div class="slide slide-3"></div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-text">
+            <h1>YOUR JOURNEY TO THE <span>PROS</span> STARTS HERE</h1>
+            <p>Showcase your talent, get scouted, and take your career to the next level.</p>
+            <button>FIND OUT HOW</button>
+        </div>
+
+        <div class="player-card" id="player-card">
+            <div class="header">
+                <h3>Player's Name</h3>
+                <h2 id="player-name"></h2>
+            </div>
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Nationality</div>
+                    <div class="detail-value" id="player-nationality"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Age</div>
+                    <div class="detail-value" id="player-age"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Weight</div>
+                    <div class="detail-value" id="player-weight"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Position</div>
+                    <div class="detail-value" id="player-position"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Height</div>
+                    <div class="detail-value" id="player-height"></div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Dominant Hand</div>
+                    <div class="detail-value" id="player-hand"></div>
+                </div>
+                <div class="detail-item full-width">
+                    <div class="detail-label">Current Team</div>
+                    <div class="detail-value" id="player-team"></div>
+                </div>
+            </div>
+            <div class="overall-rating-section">
+                <span class="overall-rating" id="player-rating"></span>
+                <div class="overall-rating-label">Overall Rating</div>
+            </div>
+
+            <div class="stats-grid" id="player-stats-grid">
+            </div>
+
+            <div class="arrow" id="next-player">▶</div>
+        </div>
+    </section>
+
+    <section class="mid-sections" id="how-it-works">
+        <div class="container">
+            <h2 class="section-header">HOW IT WORKS</h2>
+            <div class="how-it-works-grid">
+                <div class="step-item">
+                    <i class="fas fa-user-plus"></i>
+                    <h4>CREATE YOUR PROFILE</h4>
+                    <p>Upload your name, age, contact info, position, and club you're playing for.</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-video"></i>
+                    <h4>SHOWCASE YOUR TALENT</h4>
+                    <p>Share videos of your best performances and achievements.</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>GET RATED BY EXPERTS</h4>
+                    <p>Scout evaluates your ability, speed, physicality, and more.</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-trophy"></i>
+                    <h4>GO PRO</h4>
+                    <p>Get scouted, build your network, and take the next step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mid-sections" style="padding-top: 0;" id="why-choose">
+        <div class="container">
+            <h2 class="section-header" style="margin-bottom: 30px;">WHY CHOOSE K2S?</h2>
+            <div class="why-choose-grid">
+
+                <div class="why-category">
+                    <div>
+                        <h3>FOR ATHLETES</h3>
+                        <ul>
+                            <li>Unmatched visibility to professional scouts</li>
+                            <li>Performance-based evaluation system</li>
+                            <li>Direct access to professional clubs</li>
+                            <li>Build a profile that highlights your journey and talent</li>
+                        </ul>
+                    </div>
+                    <button class="join-btn">JOIN NOW</button>
+                </div>
+
+                <div class="why-category">
+                    <div>
+                        <h3>FOR SCOUTS</h3>
+                        <ul>
+                            <li>Access a diverse pool of talent across sports</li>
+                            <li>Data-driven insights for better evaluations</li>
+                            <li>Simplify talent discovery with detailed player profiles</li>
+                        </ul>
+                    </div>
+                    <button class="join-btn">JOIN NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-section" id="about-us">
+        <div class="container">
+            <div class="about-visuals">
+                <h2>ABOUT US</h2>
+                <div class="color-boxes">
+                    <div class="box box-purple"></div>
+                    <div class="box box-dark-gray"></div>
+                    <div class="box box-teal"></div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h3>DISCOVER. EVALUATE. ELEVATE.</h3>
+
+                <p class="mission-statement">
+                    We bridge the gap between raw talent and professional clubs with professional scouts.
+                    Our mission is to bridge the gap between raw talent and professional opportunities,
+                    providing a comprehensive platform for scouts, athletes, and clubs to connect and thrive.
+                </p>
+
+                <p class="intro-text">
+                    Whether you're an athlete looking to be discovered or a scout seeking the next big talent,
+                    KCS makes it possible.
+                </p>
+
+                <div class="key-points">
+                    <div class="point">
+                        <span class="point-title">DISCOVER</span>
+                        <p>Access talent at all levels, connecting upcoming stars with opportunities at professional
+                            scouting teams globally.</p>
+                    </div>
+                    <div class="point">
+                        <span class="point-title">EVALUATE</span>
+                        <p>Comprehensive assessment tools that measure technical skills, marketing, and assessing
+                            professional development.</p>
+                    </div>
+                    <div class="point">
+                        <span class="point-title">ELEVATE</span>
+                        <p>Promote athletes at all levels, connecting them to professional opportunities and bridging
+                            gaps within sports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="categories" class="top-categories">
+        <h2>Featured Sports Gear</h2>
+        <div class="categories-row">
+            <div class="product-card">
+                <img src="../images/freepik__front-and-back-view-of-a-soccer-uniform-with-a-pol__93652.png"
+                    alt="Soccer Jersey">
+                <div class="product-info">
+                    <p class="name">Pro Soccer Jersey</p>
+                    <p class="price">From $49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/freepik__front-and-back-view-of-a-soccer-uniform-with-a-pol__93657.png"
+                    alt="Soccer Ball">
+                <div class="product-info">
+                    <p class="name">Official Match Ball</p>
+                    <p class="price">From $29</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/freepik__front-and-back-view-of-a-soccer-uniform-with-a-pol__93661.png"
+                    alt="Soccer Cleats">
+                <div class="product-info">
+                    <p class="name">Performance Cleats</p>
+                    <p class="price">From $89</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/freepik__front-and-back-view-of-a-soccer-uniform-with-a-pol__93663.png"
+                    alt="Training Gear">
+                <div class="product-info">
+                    <p class="name">Training Kit</p>
+                    <p class="price">From $39</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/freepik__front-and-back-view-of-a-soccer-uniform-with-a-pol__93659.png"
+                    alt="Sports Accessories">
+                <div class="product-info">
+                    <p class="name">Sports Accessories</p>
+                    <p class="price">From $15</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="more-categories-container">
+            <a href="marketplace.html" class="more-categories-btn">Explore Full Store</a>
+        </div>
+    </section>
+
+    <section class="mid-sections cta-section" id="ready-to-join">
+        <div class="container">
+            <h2 class="section-header">READY TO TAKE THE NEXT STEP?</h2>
+            <div class="color-boxes-cta">
+                <div class="box-cta box-yellow"></div>
+                <div class="box-cta box-orange"></div>
+                <div class="box-cta box-teal-dark"></div>
+                <div class="box-cta box-green-dark"></div>
+                <div class="box-cta box-red"></div>
+            </div>
+            <div class="cta-options">
+                <span class="cta-option">• Join free as an **Athlete**</span>
+                <span class="cta-option">• Join free as a **Scout**</span>
+            </div>
+            <button class="join-now-lg">JOIN NOW</button>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="section-header">STORIES FROM OUR USERS</h2>
+            <div class="testimonial-content">
+                <div class="nav-arrows">
+                    <i class="fas fa-chevron-left" id="prev-testimonial"></i>
+                </div>
+                <div class="testimonial-card" id="current-testimonial">
+                    <div class="quote-box">
+                        <p>"THIS PLATFORM SIMPLIFIED TALENT SCOUTING AND HELPED US FIND EXCEPTIONAL PLAYERS."</p>
+                    </div>
+                    <div class="user-info">
+                        <img class="user-placeholder"
+                            src="../images/How to Skyrocket Website Traffic with Pinterest.jpeg">
+                        <div>
+                            <h4>MARK REYNOLDS</h4>
+                            <p>Professional Scout</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-arrows">
+                    <i class="fas fa-chevron-right" id="next-testimonial-btn"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="k2s-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo"><img
+                        src="../images/WhatsApp_Image_2025-10-25_at_16.24.26_92ac47b1-removebg-preview.png"
+                        height="100px"></div>
+                <h3>GET THE LATEST SCOUTING UPDATES!</h3>
+                <p>Join the free community and stay ahead of the game! Get exclusive scouting insights, athlete
+                    spotlights, and industry news delivered directly to your inbox. Don't miss out on the latest trends
+                    shaping the future of sports talent discovery.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-center-graphic">
+                <div class="purple-circle"></div>
+            </div>
+
+            <div class="footer-right">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:info@k2ssports.com">info@k2ssports.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+2348069990588">+234 806 999 0588</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Address</span>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 K2s Sports.</p>
+            <a href="#" class="admin-link">
+                <i class="fas fa-user-circle"></i> Admin
+            </a>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be added here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: $<span id="cart-total">0.00</span></span>
+                </div>
+                <button class="proceed-to-payment">Proceed to Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

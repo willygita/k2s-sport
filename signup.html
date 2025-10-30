@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - KCS Sports Platform</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span style="font-size: 24px; font-weight: 900; color: #00FFCC;"><img src="../images/WhatsApp_Image_2025-10-25_at_16.24.26_92ac47b1-removebg-preview.png" height="100px"></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">SCOUTING PROGRAM</a>
+            <a href="marketplace.html">STORE</a>
+            <a href="#">CONTACT US</a>
+            <div class="mobile-cta-buttons">
+                <a href="login.html" class="login-btn">LOGIN</a>
+                <a href="signup.html" class="signup-btn">SIGN UP</a>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">LOGIN</a>
+            <a href="signup.html" class="signup-btn">SIGN UP</a>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        </div>
+    </nav>
+
+    <section class="signup-section">
+        <div class="container">
+            <div class="signup-form-container">
+                <h2>Create Your Account</h2>
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" class="signup-submit-btn">Sign Up</button>
+                </form>
+                <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

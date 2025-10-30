@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scouting Program - KCS Sports Platform</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span style="font-size: 24px; font-weight: 900; color: #00FFCC;"><img
+                    src="../images/WhatsApp_Image_2025-10-25_at_16.24.26_92ac47b1-removebg-preview.png"
+                    height="100px"></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="scouting.html" class="active">SCOUTING PROGRAM</a>
+            <a href="marketplace.html">STORE</a>
+            <a href="#">CONTACT US</a>
+            <div class="mobile-cta-buttons">
+                <a href="login.html" class="login-btn">LOGIN</a>
+                <a href="signup.html" class="signup-btn">SIGN UP</a>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">LOGIN</a>
+            <a href="signup.html" class="signup-btn">SIGN UP</a>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        </div>
+    </nav>
+
+    <section class="scouting-hero">
+        <div class="scouting-hero-content">
+            <h1>DISCOVER TALENT WITH OUR <span>SCOUTING PROGRAM</span></h1>
+            <p style="text-align: center;">Connect with emerging athletes, evaluate skills, and build the next
+                generation of sports stars.</p>
+            <button>FIND TALENT NOW</button>
+        </div>
+    </section>
+
+    <section class="mid-sections" id="how-it-works">
+        <div class="container">
+            <h2 class="section-header">HOW THE SCOUTING PROGRAM WORKS</h2>
+            <div class="how-it-works-grid">
+                <div class="step-item">
+                    <i class="fas fa-user-plus"></i>
+                    <h4>CREATE YOUR PROFILE</h4>
+                    <p>Upload your name, age, contact info, position, and club you're playing for.</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-video"></i>
+                    <h4>SHOWCASE YOUR TALENT</h4>
+                    <p>Share videos of your best performances and achievements.</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>GET RATED BY EXPERTS</h4>
+                    <p>Scout evaluates your ability, speed, physicality, and more.</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-trophy"></i>
+                    <h4>GO PRO</h4>
+                    <p>Get scouted, build your network, and take the next step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Profile Section -->
+    <section class="mid-sections" id="create-profile">
+        <div class="container">
+            <h2 class="section-header">CREATE YOUR ATHLETE PROFILE</h2>
+            <form class="profile-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select Position</option>
+                        <option value="point-guard">Point Guard</option>
+                        <option value="small-forward">Small Forward</option>
+                        <option value="center">Center</option>
+                        <option value="shooting-guard">Shooting Guard</option>
+                        <option value="power-forward">Power Forward</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="club">Current Club/Team</label>
+                    <input type="text" id="club" name="club" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact Email</label>
+                    <input type="email" id="contact" name="contact" required>
+                </div>
+                <button type="submit" class="submit-btn">Create Profile</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Showcase Talent Section -->
+    <section class="mid-sections" id="showcase-talent">
+        <div class="container">
+            <h2 class="section-header">SHOWCASE YOUR TALENT</h2>
+            <p>Upload videos of your best performances to get noticed by scouts.</p>
+            <form class="upload-form">
+                <div class="form-group">
+                    <label for="video-title">Video Title</label>
+                    <input type="text" id="video-title" name="video-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="video-description">Description</label>
+                    <textarea id="video-description" name="video-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="video-upload">Upload Video</label>
+                    <input type="file" id="video-upload" name="video-upload" accept="video/*" required>
+                </div>
+                <button type="submit" class="submit-btn">Upload Video</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Get Rated Section -->
+    <section class="mid-sections" id="get-rated">
+        <div class="container">
+            <h2 class="section-header">GET RATED BY EXPERT SCOUTS</h2>
+            <p>Your profile and videos are reviewed by professional scouts. Here's your current rating:</p>
+            <div class="rating-display">
+                <div class="overall-rating">85</div>
+                <div class="rating-label">Overall Rating</div>
+                <div class="stats-breakdown">
+                    <div class="stat">Pace: 91</div>
+                    <div class="stat">Passing: 78</div>
+                    <div class="stat">Shooting: 88</div>
+                    <div class="stat">Dribbling: 93</div>
+                    <div class="stat">Defense: 70</div>
+                    <div class="stat">Rebound: 85</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Go Pro Section -->
+    <section class="mid-sections" id="go-pro">
+        <div class="container">
+            <h2 class="section-header">TAKE THE NEXT STEP TO GO PRO</h2>
+            <p>Connect with scouts and clubs interested in your talent.</p>
+            <div class="opportunities">
+                <div class="opportunity">
+                    <h4>Scout Interest</h4>
+                    <p>You have 3 scout views this week.</p>
+                </div>
+                <div class="opportunity">
+                    <h4>Team Offers</h4>
+                    <p>2 teams have expressed interest.</p>
+                </div>
+                <div class="opportunity">
+                    <h4>Network</h4>
+                    <p>Connect with 15+ scouts and coaches.</p>
+                </div>
+            </div>
+            <button class="join-now-lg">Explore Opportunities</button>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="mid-sections cta-section" id="ready-to-join">
+        <div class="container">
+            <h2 class="section-header">READY TO START SCOUTING?</h2>
+            <div class="color-boxes-cta">
+                <div class="box-cta box-yellow"></div>
+                <div class="box-cta box-orange"></div>
+                <div class="box-cta box-teal-dark"></div>
+                <div class="box-cta box-green-dark"></div>
+                <div class="box-cta box-red"></div>
+            </div>
+            <div class="cta-options">
+                <span class="cta-option">• Join free as a **Scout**</span>
+                <span class="cta-option">• Join free as a **Club Representative**</span>
+            </div>
+            <button class="join-now-lg">JOIN NOW</button>
+        </div>
+    </section>
+
+
+
+    <footer class="k2s-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo"><img
+                        src="../images/WhatsApp_Image_2025-10-25_at_16.24.26_92ac47b1-removebg-preview.png"
+                        height="100px"></div>
+                <h3>GET THE LATEST SCOUTING UPDATES!</h3>
+                <p>Join the free community and stay ahead of the game! Get exclusive scouting insights, athlete
+                    spotlights, and industry news delivered directly to your inbox. Don't miss out on the latest trends
+                    shaping the future of sports talent discovery.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-center-graphic">
+                <div class="purple-circle"></div>
+            </div>
+
+            <div class="footer-right">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:info@k2ssports.com">info@k2ssports.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+2348069990588">+234 806 999 0588</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Address</span>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 K2s Sports.</p>
+            <a href="#" class="admin-link">
+                <i class="fas fa-user-circle"></i> Admin
+            </a>
+        </div>
+    </footer>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
