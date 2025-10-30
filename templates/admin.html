@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - KCS Sports Platform</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span style="font-size: 24px; font-weight: 900; color: #00FFCC;"><img
+                    src="../images/WhatsApp_Image_2025-10-25_at_16.24.26_92ac47b1-removebg-preview.png"
+                    height="100px"></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="scouting.html">SCOUTING PROGRAM</a>
+            <a href="marketplace.html">STORE</a>
+            <a href="dashboard.html">USER DASHBOARD</a>
+            <a href="admin.html" class="active">ADMIN DASHBOARD</a>
+            <a href="#">CONTACT US</a>
+            <div class="mobile-cta-buttons">
+                <a href="login.html">LOGIN</a>
+                <a href="signup.html">SIGN UP</a>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="login.html">LOGIN</a>
+            <a href="signup.html">SIGN UP</a>
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        </div>
+    </nav>
+
+    <!-- Admin Welcome Area -->
+    <section class="dashboard-welcome">
+        <div class="container">
+            <div class="welcome-card">
+                <div class="welcome-header">
+                    <div class="user-info">
+                        <h1>Admin Dashboard</h1>
+                        <p class="user-role" id="admin-role">Administrator</p>
+                        <div class="verification-status">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Admin Access</span>
+                        </div>
+                    </div>
+                    <div class="user-avatar">
+                        <img src="../images/WhatsApp_Image_2025-10-25_at_16.24.26_92ac47b1-removebg-preview.png"
+                            alt="Admin Avatar">
+                    </div>
+                </div>
+                <div class="quick-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="total-users">1,250</div>
+                        <div class="stat-label">Total Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="total-orders">450</div>
+                        <div class="stat-label">Total Orders</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="total-revenue">$125,000</div>
+                        <div class="stat-label">Total Revenue</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="active-tournaments">12</div>
+                        <div class="stat-label">Active Tournaments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Overview -->
+    <section class="mid-sections" id="platform-overview">
+        <div class="container">
+            <h2 class="section-header">PLATFORM OVERVIEW</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-users"></i> User Statistics</h3>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <span class="analytics-value">1,250</span>
+                            <span class="analytics-label">Registered Users</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">890</span>
+                            <span class="analytics-label">Active Users</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">45</span>
+                            <span class="analytics-label">New This Month</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-shopping-cart"></i> Order Statistics</h3>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <span class="analytics-value">450</span>
+                            <span class="analytics-label">Total Orders</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">320</span>
+                            <span class="analytics-label">Fulfilled Orders</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">$125K</span>
+                            <span class="analytics-label">Revenue</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-trophy"></i> Tournament Stats</h3>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <span class="analytics-value">12</span>
+                            <span class="analytics-label">Active Tournaments</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">85</span>
+                            <span class="analytics-label">Total Teams</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">1,200</span>
+                            <span class="analytics-label">Participants</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-handshake"></i> Sponsorship Overview</h3>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <span class="analytics-value">15</span>
+                            <span class="analytics-label">Active Sponsorships</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">$50K</span>
+                            <span class="analytics-label">Monthly Investment</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">8</span>
+                            <span class="analytics-label">Pending Applications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Management -->
+    <section class="mid-sections" id="user-management">
+        <div class="container">
+            <h2 class="section-header">USER MANAGEMENT</h2>
+            <div class="dashboard-card full-width">
+                <h3><i class="fas fa-users-cog"></i> Manage Users</h3>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Joined</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>Player</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>2023-01-15</td>
+                            <td>
+                                <button class="admin-btn view-btn">View</button>
+                                <button class="admin-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Jane Smith</td>
+                            <td>jane@example.com</td>
+                            <td>Coach</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>2023-02-20</td>
+                            <td>
+                                <button class="admin-btn view-btn">View</button>
+                                <button class="admin-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Mike Johnson</td>
+                            <td>mike@example.com</td>
+                            <td>Player</td>
+                            <td><span class="status-inactive">Inactive</span></td>
+                            <td>2023-03-10</td>
+                            <td>
+                                <button class="admin-btn view-btn">View</button>
+                                <button class="admin-btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Management -->
+    <section class="mid-sections" id="order-management">
+        <div class="container">
+            <h2 class="section-header">ORDER MANAGEMENT</h2>
+            <div class="dashboard-card full-width">
+                <h3><i class="fas fa-shopping-bag"></i> Manage Orders</h3>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#ORD001</td>
+                            <td>John Doe</td>
+                            <td>Classic Jersey</td>
+                            <td>2</td>
+                            <td>$50</td>
+                            <td><span class="status-pending">Pending</span></td>
+                            <td>2024-03-15</td>
+                            <td>
+                                <button class="admin-btn fulfill-btn">Fulfill</button>
+                                <button class="admin-btn view-btn">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#ORD002</td>
+                            <td>Jane Smith</td>
+                            <td>Pro Jersey</td>
+                            <td>1</td>
+                            <td>$45</td>
+                            <td><span class="status-fulfilled">Fulfilled</span></td>
+                            <td>2024-03-14</td>
+                            <td>
+                                <button class="admin-btn view-btn">View</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#ORD003</td>
+                            <td>Mike Johnson</td>
+                            <td>Training Jersey</td>
+                            <td>3</td>
+                            <td>$66</td>
+                            <td><span class="status-pending">Pending</span></td>
+                            <td>2024-03-13</td>
+                            <td>
+                                <button class="admin-btn fulfill-btn">Fulfill</button>
+                                <button class="admin-btn view-btn">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Management -->
+    <section class="mid-sections" id="tournament-management">
+        <div class="container">
+            <h2 class="section-header">TOURNAMENT MANAGEMENT</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-plus-circle"></i> Create Tournament</h3>
+                    <p>Create new tournaments and leagues</p>
+                    <button class="dashboard-btn">Create New</button>
+                </div>
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-edit"></i> Manage Tournaments</h3>
+                    <div class="tournament-list">
+                        <div class="tournament-item">
+                            <h4>Premier League 2024</h4>
+                            <p>Status: Active | Teams: 16</p>
+                            <button class="admin-btn edit-btn">Edit</button>
+                        </div>
+                        <div class="tournament-item">
+                            <h4>Championship Cup</h4>
+                            <p>Status: Upcoming | Teams: 8</p>
+                            <button class="admin-btn edit-btn">Edit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-chart-line"></i> Tournament Analytics</h3>
+                    <div class="analytics-grid">
+                        <div class="analytics-item">
+                            <span class="analytics-value">12</span>
+                            <span class="analytics-label">Active Tournaments</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">1,200</span>
+                            <span class="analytics-label">Total Participants</span>
+                        </div>
+                        <div class="analytics-item">
+                            <span class="analytics-value">85%</span>
+                            <span class="analytics-label">Completion Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Management -->
+    <section class="mid-sections" id="sponsorship-management">
+        <div class="container">
+            <h2 class="section-header">SPONSORSHIP MANAGEMENT</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-handshake"></i> Sponsorship Applications</h3>
+                    <div class="sponsorship-apps">
+                        <div class="app-item">
+                            <div class="app-header">
+                                <h4>Nike Partnership</h4>
+                                <span class="app-status pending">Pending</span>
+                            </div>
+                            <p>Equipment sponsorship application</p>
+                            <span class="app-date">Applied: Feb 28, 2024</span>
+                            <div class="app-actions">
+                                <button class="admin-btn approve-btn">Approve</button>
+                                <button class="admin-btn reject-btn">Reject</button>
+                            </div>
+                        </div>
+                        <div class="app-item">
+                            <div class="app-header">
+                                <h4>Adidas Youth Program</h4>
+                                <span class="app-status approved">Approved</span>
+                            </div>
+                            <p>Youth development sponsorship</p>
+                            <span class="app-date">Approved: Feb 15, 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-eye"></i> Active Sponsorships</h3>
+                    <div class="sponsored-list">
+                        <div class="sponsored-item">
+                            <div class="sponsored-info">
+                                <h4>Thunder Eagles FC</h4>
+                                <p>Equipment Sponsor</p>
+                                <span class="sponsor-amount">$5,000/month</span>
+                            </div>
+                            <div class="sponsored-status active">Active</div>
+                            <button class="admin-btn manage-btn">Manage</button>
+                        </div>
+                        <div class="sponsored-item">
+                            <div class="sponsored-info">
+                                <h4>Maria Rodriguez</h4>
+                                <p>Individual Player Sponsor</p>
+                                <span class="sponsor-amount">$2,500/month</span>
+                            </div>
+                            <div class="sponsored-status active">Active</div>
+                            <button class="admin-btn manage-btn">Manage</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notifications & Announcements -->
+    <section class="mid-sections" id="notifications-announcements">
+        <div class="container">
+            <h2 class="section-header">NOTIFICATIONS & ANNOUNCEMENTS</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-bullhorn"></i> Send Announcement</h3>
+                    <form class="announcement-form">
+                        <div class="form-group">
+                            <label for="announcement-title">Title</label>
+                            <input type="text" id="announcement-title" placeholder="Announcement Title">
+                        </div>
+                        <div class="form-group">
+                            <label for="announcement-message">Message</label>
+                            <textarea id="announcement-message" rows="4" placeholder="Announcement Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="target-audience">Target Audience</label>
+                            <select id="target-audience">
+                                <option>All Users</option>
+                                <option>Players Only</option>
+                                <option>Coaches Only</option>
+                                <option>Specific Users</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="dashboard-btn">Send Announcement</button>
+                    </form>
+                </div>
+                <div class="dashboard-card">
+                    <h3><i class="fas fa-history"></i> Recent Announcements</h3>
+                    <div class="announcement-list">
+                        <div class="announcement-item">
+                            <h4>New Tournament Registration Open</h4>
+                            <p>The registration for the Summer Championship is now open.</p>
+                            <span class="announcement-date">Sent: March 10, 2024</span>
+                        </div>
+                        <div class="announcement-item">
+                            <h4>Platform Maintenance Notice</h4>
+                            <p>Scheduled maintenance on March 15, 2024.</p>
+                            <span class="announcement-date">Sent: March 8, 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
